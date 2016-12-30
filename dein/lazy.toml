@@ -8,3 +8,7 @@ hook_source = '''
 [[plugins]]
 repo = 'kana/vim-smartinput'
 on_i = 1
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
