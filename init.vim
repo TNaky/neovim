@@ -67,6 +67,11 @@ nnoremap < <C-w><
 " 置換
 nnoremap s/ :%s/
 
+" tabキーで次の検索候補を選択
+inoremap <expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+" S-tabキーで前の検索候補を選択
+inoremap <expr><S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 " スーパーユーザとしてファイルを上書き
 nnoremap wtee :w !sudo tee %
 
