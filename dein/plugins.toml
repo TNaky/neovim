@@ -65,6 +65,18 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'osyo-manga/unite-quickfix'
+hook_add = '''
+  " QuickFixウィンドウでもプレビューや絞り込みを有効化
+  let QFixWin_EnableMode = 1
+  " QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
+  let QFix_UseLocationList = 1
+'''
+
+[[plugins]]
+repo = 'osyo-manga/shabadou.vim'
+
+[[plugins]]
 repo = 'thinca/vim-quickrun'
 hook_add = '''
   let g:quickrun_config = {
@@ -172,18 +184,6 @@ hook_add = '''
   vnoremap <silent><buffer> <F5> :QuickRun -mode v -type tmptex<Cr>
   nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
 '''
-
-[[plugins]]
-repo = 'osyo-manga/unite-quickfix'
-hook_add = '''
-  " QuickFixウィンドウでもプレビューや絞り込みを有効化
-  let QFixWin_EnableMode = 1
-  " QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
-  let QFix_UseLocationList = 1
-'''
-
-[[plugins]]
-repo = 'osyo-manga/shabadou.vim'
 
 [[plugins]]
 repo = 'tyru/caw.vim.git'
