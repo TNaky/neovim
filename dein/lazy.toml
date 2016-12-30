@@ -3,6 +3,8 @@ repo = 'kana/vim-smartchr'
 on_i = 1
 hook_source = '''
   inoremap <buffer> <expr> = smartchr#loop(' = ', ' == ', '=')
+  inoremap <buffer> <expr> + smartchr#loop(' + ', '++', '+')
+  inoremap <buffer> <expr> - smartchr#loop(' - ', '--', '-')
 '''
 
 [[plugins]]
