@@ -184,3 +184,6 @@ hook_post_update = '''
 
 [[plugins]]
 repo = 'osyo-manga/shabadou.vim'
+
+[[plugins]]
+repo = 'tyru/caw.vim.git'
